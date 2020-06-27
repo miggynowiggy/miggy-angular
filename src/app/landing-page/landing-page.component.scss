@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(225deg, #0093E9 0%, #80D0C7 100%);
+}
+
+h1 {
+    position: relative;
+    top: 30vh;
+    font-family: 'AvenirNext LT Pro';
+    font-weight: bold;
+}
+
+h3 {
+    position: relative;
+    top: 52vh;
+}

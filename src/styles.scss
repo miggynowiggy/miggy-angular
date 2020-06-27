@@ -1,22 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'assets/scss/modules/_fonts.scss';
-// primary font
-$primary_font: 'AvenirNext LT Pro';
-// font-weight
-$thin:100;
-$light:300;
-$regular:400;
-$bold:700;
-$black:900;
-// Font size
-$font-xs:12px;
-$font-sm: 14px;
-$primary-fs: 16px;
-$font-md: 18px;
-$font-lg: 20px;
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('./assets/fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
-body {
-    font-family: $primary_font;
-    font-size: $primary-fs;
-    font-weight: $regular;
+@font-face {
+    font-family: 'AvenirNext LT Pro Cn';
+    src: url('./assets/fonts/AvenirNextLTPro-DemiCn.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextLTPro-DemiCn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro Demi';
+    src: url('./assets/fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextLTPro-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('./assets/fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('./assets/fonts/AvenirNextLTPro-It.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextLTPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro MediumCn';
+    src: url('./assets/fonts/AvenirNextLTPro-BoldCn.woff2') format('woff2'),
+        url('./assets/fonts/AvenirNextLTPro-BoldCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }

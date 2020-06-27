@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: grayscale($color: #000000);
+}
+
+#sideNav {
+    height: 100vh;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
