@@ -30,7 +30,6 @@ $firebase: #FF6F00;
     }
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +37,7 @@ $firebase: #FF6F00;
 }
 
 .about-page {
-    background-color: #dae1e7;
+    background-color: #e5eaee;
     width: 100vw;
     height: 120vh;
 }
@@ -47,6 +46,8 @@ $firebase: #FF6F00;
     font-weight: 600;
     font-size: 3.5em;
     line-height: 1em;
+    color: #27496d;
+    letter-spacing: 2px;
 }
 
 .icons-container {
@@ -387,8 +388,9 @@ $firebase: #FF6F00;
 
     .about-page {
         background-color: #dae1e7;
+        position: relative;
         width: 100vw;
-        height: 280vh;
+        height: 270vh;
     }    
 
     .icons-container div {
@@ -397,7 +399,8 @@ $firebase: #FF6F00;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 35px;
+        margin-top: 40px;
+        margin-left: 50px;
         background: #fff;
         width: 100px;
         height: 100px;
@@ -410,9 +413,268 @@ $firebase: #FF6F00;
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        padding: 2px 2px 2px 2px;
+    }
 
+    .icons-container div:nth-child(1) {
+        background: $html;
+    
+        &:before {
+            background: darken($html, 20%);
+        }
+    
+        &:after {
+            background: lighten($html, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: $html;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(75px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: $html;
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(30px, 50px);
+        }
+    }
+
+    .icons-container div:nth-child(2) {
+        background: $css;
+    
+        &:before {
+            background: darken($css, 20%);
+        }
+    
+        &:after {
+            background: lighten($css, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: $css;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(60px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($css, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(35px, 55px);
+        }
+    }
+    
+    .icons-container div:nth-child(3) {
+        background: $js;
+    
+        &:before {
+            background: darken($js, 20%);
+        }
+    
+        &:after {
+            background: lighten($js, 20%);
+        }
+    
+        .icon {
+            color: #000;
+            font-size: 4.9em;
+            margin-top: 90px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($js, 8%);
+            font-size: 2.25em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(115px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($js, 10%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(25px, 55px);
+        }
+    }
+    
+    .icons-container div:nth-child(4) {
+        background: $vue;
+    
+        &:before {
+            background: darken($vue, 20%);
+        }
+    
+        &:after {
+            background: lighten($vue, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: $vue;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(55px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($vue, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(25px, 50px);
+        }
+    }
+    
+    .icons-container div:nth-child(5) {
+        background: darken($react, 5%);
+    
+        &:before {
+            background: darken($react, 20%);
+        }
+    
+        &:after {
+            background: lighten($react, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 98px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($react, 10%);
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(75px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($react, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(65px, 50px);
+        }
+    }
+    
+    .icons-container div:nth-child(6) {
+        background: $node;
+    
+        &:before {
+            background: darken($node, 20%);
+        }
+    
+        &:after {
+            background: lighten($node, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($node, 10%);
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(95px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($node, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(25px, 45px);
+        }
+    }
+    
+    .icons-container div:nth-child(7) {
+        background: $firebase;
+    
+        &:before {
+            background: darken($firebase, 20%);
+        }
+    
+        &:after {
+            background: lighten($firebase, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($firebase, 2%);
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(100px, 15px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($firebase, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(10px, 65px);
+        }
     }
    
 }
