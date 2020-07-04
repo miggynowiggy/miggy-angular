@@ -11,7 +11,7 @@ export const particlesConfig = {
         value: '#ffffff'
       },
       shape: {
-        type: 'edge',
+        type: 'circle',
         stroke: {
           width: 0,
           color: '#000000'
@@ -26,13 +26,13 @@ export const particlesConfig = {
         }
       },
       opacity: {
-        value: 0.40,
+        value: 0.2,
         random: true,
         anim: {
           enable: true,
-          speed: 2,
+          speed: 0.2,
           opacity_min: 0,
-          sync: false
+          sync: true
         }
       },
       size: {
@@ -49,7 +49,7 @@ export const particlesConfig = {
         enable: true,
         distance: 100,
         color: '#ffffff',
-        opacity: 0.3,
+        opacity: 0.1,
         width: 1
       },
       move: {

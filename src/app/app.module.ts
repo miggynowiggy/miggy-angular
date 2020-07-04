@@ -4,17 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { SkillsIconComponent } from './skills-icon/skills-icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    SideNavComponent
+    AboutPageComponent,
+    SkillsIconComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

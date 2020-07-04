@@ -1,0 +1,19 @@
+<div class="about-page">
+    <h1 class="text-center pt-5 ">SKILLS</h1> 
+    <div class="icons-container">
+        <div 
+            href="#" 
+            *ngFor="let skill of skills"
+        >   
+            <i class="icon" [class]="skill.iconName"></i>
+
+            <span class="skillDetails">
+                {{ skill.name }}
+            </span>
+
+            <span class="skillProficiency">
+                {{ skill.proficiency }}
+            </span>
+        </div>
+    </div>
+</div>

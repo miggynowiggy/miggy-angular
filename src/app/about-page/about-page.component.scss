@@ -1,0 +1,691 @@
+$transition-time: 1s;
+$html: #F06529;
+$css: #0780C7;
+$js: #FBD601;
+$vue: #41b883;
+$react: #00D9FF;
+$node: #87C000;
+$firebase: #FF6F00;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'AvenirNext LT Pro';
+}
+
+.about-page {
+    background-color: #dae1e7;
+    width: 100vw;
+    height: 125vh;
+}
+
+.about-page h1 {
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.icons-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw 0 5vw;
+}
+
+.icon {
+    font-size: 4.8em;
+    color: #5a5a5a;
+}
+
+.icons-container div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    transition: $transition-time;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+}
+
+.icons-container div:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 20px 50px rgba(0, 0, 0, .5);
+}
+
+.icons-container div::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transition: $transition-time;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.icons-container div::after {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: 6px;
+    height: 25px;
+    width: 72px;
+    background: #b1b1b1;
+    transition: $transition-time;
+    transform: rotate(45deg) skewY(-45deg);
+}
+
+.skillDetails {
+    opacity: 0;
+    font-size: 0em;
+}
+
+.skillProficiency {
+    opacity: 0;
+    font-size: 0em;
+}
+
+//hovering icons
+.icons-container div:hover:nth-child(1) {
+    background: $html;
+
+    &:before {
+        background: darken($html, 20%);
+    }
+
+    &:after {
+        background: lighten($html, 20%);
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 4.9em;
+        margin-top: 120px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: $html;
+        font-size: 3.5em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(90px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: $html;
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(45px, 75px);
+    }
+}
+
+.icons-container div:hover:nth-child(2) {
+    background: $css;
+
+    &:before {
+        background: darken($css, 20%);
+    }
+
+    &:after {
+        background: lighten($css, 20%);
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 4.9em;
+        margin-top: 120px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: $css;
+        font-size: 3.5em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(90px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: darken($css, 8%);
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(65px, 75px);
+    }
+}
+
+.icons-container div:hover:nth-child(3) {
+    background: $js;
+
+    &:before {
+        background: darken($js, 20%);
+    }
+
+    &:after {
+        background: lighten($js, 20%);
+    }
+
+    .icon {
+        color: #000;
+        font-size: 4.9em;
+        margin-top: 105px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: darken($js, 8%);
+        font-size: 3em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(140px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: darken($js, 10%);
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(45px, 75px);
+    }
+}
+
+.icons-container div:hover:nth-child(4) {
+    background: $vue;
+
+    &:before {
+        background: darken($vue, 20%);
+    }
+
+    &:after {
+        background: lighten($vue, 20%);
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 4.9em;
+        margin-top: 120px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: $vue;
+        font-size: 3em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(65px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: darken($vue, 8%);
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(35px, 75px);
+    }
+}
+
+.icons-container div:hover:nth-child(5) {
+    background: darken($react, 5%);
+
+    &:before {
+        background: darken($react, 20%);
+    }
+
+    &:after {
+        background: lighten($react, 20%);
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 4.9em;
+        margin-top: 120px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: darken($react, 10%);
+        font-size: 3em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(90px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: darken($react, 8%);
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(65px, 75px);
+    }
+}
+
+.icons-container div:hover:nth-child(6) {
+    background: $node;
+
+    &:before {
+        background: darken($node, 20%);
+    }
+
+    &:after {
+        background: lighten($node, 20%);
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 4.9em;
+        margin-top: 120px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: darken($node, 10%);
+        font-size: 3em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(120px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: darken($node, 8%);
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(95px, 75px);
+    }
+}
+
+.icons-container div:hover:nth-child(7) {
+    background: $firebase;
+
+    &:before {
+        background: darken($firebase, 20%);
+    }
+
+    &:after {
+        background: lighten($firebase, 20%);
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 4.9em;
+        margin-top: 100px;
+    }
+
+    .skillDetails {
+        display: inline-block;
+        color: darken($firebase, 2%);
+        font-size: 3em;
+        font-weight: bold;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(120px, 25px);
+    }
+
+    .skillProficiency {
+        display: inline-block;
+        color: darken($firebase, 8%);
+        font-size: 1.5em;
+        opacity: 1;
+        transition: $transition-time;
+        transform: rotate(90deg) skew(0deg) translate(105px, 75px);
+    }
+}
+
+/* Portrait and Landscape */
+// Iphone 5 / SE
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .about-page {
+        background-color: #dae1e7;
+        width: 100vw;
+        height: 280vh;
+    }    
+
+    .icons-container div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 35px;
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        transition: $transition-time;
+        transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+        box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+    }
+
+    .icons-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+   
+}
+
+/* Portrait and Landscape */
+// iphone 6, 6s, 7, 8
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .about-page {
+        background-color: #dae1e7;
+        width: 100vw;
+        height: 250vh;
+    }    
+
+    .icons-container div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 50px;
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        transition: $transition-time;
+        transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+        box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+    }
+
+    .icons-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 2px 2px 2px 2px;
+    }
+
+    .icons-container div:nth-child(1) {
+        background: $html;
+    
+        &:before {
+            background: darken($html, 20%);
+        }
+    
+        &:after {
+            background: lighten($html, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: $html;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(75px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: $html;
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(30px, 50px);
+        }
+    }
+
+    .icons-container div:nth-child(2) {
+        background: $css;
+    
+        &:before {
+            background: darken($css, 20%);
+        }
+    
+        &:after {
+            background: lighten($css, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: $css;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(60px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($css, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(35px, 55px);
+        }
+    }
+    
+    .icons-container div:nth-child(3) {
+        background: $js;
+    
+        &:before {
+            background: darken($js, 20%);
+        }
+    
+        &:after {
+            background: lighten($js, 20%);
+        }
+    
+        .icon {
+            color: #000;
+            font-size: 4.9em;
+            margin-top: 90px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($js, 8%);
+            font-size: 2.25em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(115px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($js, 10%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(25px, 55px);
+        }
+    }
+    
+    .icons-container div:nth-child(4) {
+        background: $vue;
+    
+        &:before {
+            background: darken($vue, 20%);
+        }
+    
+        &:after {
+            background: lighten($vue, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: $vue;
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(55px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($vue, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(25px, 50px);
+        }
+    }
+    
+    .icons-container div:nth-child(5) {
+        background: darken($react, 5%);
+    
+        &:before {
+            background: darken($react, 20%);
+        }
+    
+        &:after {
+            background: lighten($react, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 98px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($react, 10%);
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(75px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($react, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(65px, 50px);
+        }
+    }
+    
+    .icons-container div:nth-child(6) {
+        background: $node;
+    
+        &:before {
+            background: darken($node, 20%);
+        }
+    
+        &:after {
+            background: lighten($node, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($node, 10%);
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(95px, 5px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($node, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(25px, 45px);
+        }
+    }
+    
+    .icons-container div:nth-child(7) {
+        background: $firebase;
+    
+        &:before {
+            background: darken($firebase, 20%);
+        }
+    
+        &:after {
+            background: lighten($firebase, 20%);
+        }
+    
+        .icon {
+            color: #fff;
+            font-size: 4.9em;
+            margin-top: 100px;
+        }
+    
+        .skillDetails {
+            display: inline-block;
+            color: darken($firebase, 2%);
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(100px, 15px);
+        }
+    
+        .skillProficiency {
+            display: inline-block;
+            color: darken($firebase, 8%);
+            font-size: 1.5em;
+            opacity: 1;
+            transition: $transition-time;
+            transform: rotate(90deg) skew(0deg) translate(10px, 65px);
+        }
+    }
+}
