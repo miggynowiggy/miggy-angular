@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent implements OnInit {
+  constructor(firestore: AngularFirestore) {}
   public ngOnInit(): void {
   }
 
