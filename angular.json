@@ -30,12 +30,14 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/particles.js/particles.js",
               "node_modules/t-writer.js/dist/t-writer.js",
-              "node_modules/@fortawesome/fontawesome-free/js/all.js"
+              "node_modules/@fortawesome/fontawesome-free/js/all.js",
+              "node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {

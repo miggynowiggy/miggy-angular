@@ -7,6 +7,30 @@ $react: #00D9FF;
 $node: #87C000;
 $firebase: #FF6F00;
 
+[data-aos="slideRight"] {
+    transform: translateX(-100vw);
+
+    &.aos-animate {
+        transform: translateX(0);
+    }
+
+    @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2) 
+    {
+            
+        transform: translateX(-200vw);
+        opacity: 0;
+
+        &.aos-animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +40,12 @@ $firebase: #FF6F00;
 .about-page {
     background-color: #dae1e7;
     width: 100vw;
-    height: 125vh;
+    height: 120vh;
 }
 
 .about-page h1 {
     font-weight: 600;
+    font-size: 3.5em;
     line-height: 1em;
 }
 
@@ -31,7 +56,7 @@ $firebase: #FF6F00;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0 5vw 0 5vw;
+    padding: 0 2vw 0 2vw;
 }
 
 .icon {
@@ -425,7 +450,7 @@ $firebase: #FF6F00;
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
         padding: 2px 2px 2px 2px;
     }

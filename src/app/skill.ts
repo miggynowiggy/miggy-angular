@@ -3,6 +3,7 @@ export class Skill {
         public name: string,
         public iconName: string,
         public color: string,
-        public proficiency: string
+        public proficiency: string,
+        public reference: string
     ) { }
 }
