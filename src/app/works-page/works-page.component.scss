@@ -1,3 +1,6 @@
+$transitionTime: 0.85s;
+$easing: ease-in-out;
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +8,11 @@
 }
 
 .main {
-    height: 90vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .main .text-center {
@@ -17,38 +23,229 @@
     letter-spacing: 2px;
 }
 
-.main .card .card-body .card-title {
-    color: #00909e;
+.works {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 40px;
 }
 
-.main .card {
-    height: 500px;
+.work-container {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.work-container .work-card {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    margin: 30px 30px;
+    border-radius: 20px;
+    background: #f0f0f0;
+}
+
+.work-container .work-card .work-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E5EAEE;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: $transitionTime $easing;
+}
+
+.work-container .work-card .work-img img {
+    width: 101%;
+}
+
+.work-container .work-card:hover .work-img {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: $transitionTime $easing;
+    background-color: #F3F2DD;
+    background-image: attr(data-url);
+    background-position: left;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 2px rgba(47, 47, 48, 0.2);
+    
+    &::before {
+        display: none;
+        transition: $transitionTime $easing;
+    }
+
+    img {
+        width: 300px;
+        transition: $transitionTime $easing;
+    }
+}
+
+.work-container .work-card .work-img::before {
+    position: absolute;
+    content: attr(data-text);
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgba(50, 156, 182, 0.8);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.work-container .work-card .work-content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #27496D;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 5px 10px;
+        text-decoration: none;
+        background-color: rgb(39, 73, 109);
+        color: white;
+        border-radius: 50px;  
+        transition: $transitionTime $easing;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 5px 10px 2px rgba(32, 68, 105, 0.3);
+            transition: $transitionTime $easing;
+        }
+    }
 }
 
 
 /* Portrait and Landscape */
 // Iphone 5 / SE
-@media only screen 
+
+@media only screen
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    .main {
-        height: 180vh;
-        width: 100vw;
+    .works { 
+        padding: 0;
+        margin-top: 20px;
     }
 
-    .main .card {
-        height: 345px;
-        width: 85vw;
+    .work-container {
+        position: relative;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
     
-    .main .text-center {
-        font-size: 3em;
-        font-weight: bold;
-        line-height: 1em;
-        color: #27496d;
-        letter-spacing: 2px;
+    .work-container .work-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        min-height: 480px;
+        margin-top: 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0;
+    }
+
+    .work-container .work-card:hover .work-img {
+        width: 105%;
+        height: 300px;
+        left: 0;
+        top: -20px;
+        transition: $transitionTime $easing;
+    }
+    
+    .work-container .work-card .work-img {
+        position: relative;
+        left: 0;
+        width: 105%;
+        height: 200px;
+        box-shadow: 0px 5px 10px 2px rgba(32, 68, 105, 0.3);
+        transition: $transitionTime $easing;
+
+        &::before {
+            display: none;
+            transition: $transitionTime $easing;
+        }
+    }
+    
+    .work-container .work-card .work-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+    
+        a {
+            margin-top: 20px;
+            width: 100%;
+            text-decoration: none;
+            background-color: rgb(39, 73, 109);
+            color: white;
+            border-radius: 50px;  
+            transition: $transitionTime $easing;
+        }
+    }
+
+    .work-container .work-card:hover .work-img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        transition: $transitionTime $easing;
+        background-color: #F3F2DD;
+        background-image: attr(data-url);
+        background-position: left;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px 2px rgba(47, 47, 48, 0.2);
+        
+        &::before {
+            display: none;
+            transition: $transitionTime $easing;
+        }
+
+        img {
+            width: 300px;
+            transition: $transitionTime $easing;
+        }
     }
 
 }
@@ -61,22 +258,100 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    .main {
-        height: 220vh;
-        width: 100vw;
+    .works { 
+        padding: 0;
+        margin-top: 20px;
     }
 
-    .main .card {
-        height: 400px;
-        width: 85vw;
+    .work-container {
+        position: relative;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
     
-    .main .text-center {
-        font-size: 3em;
-        font-weight: bold;
-        line-height: 1em;
-        color: #27496d;
-        letter-spacing: 2px;
+    .work-container .work-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        min-height: 480px;
+        margin-top: 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0;
+    }
+
+    .work-container .work-card:hover .work-img {
+        width: 100%;
+        height: 300px;
+        left: 0;
+        top: -20px;
+        transition: $transitionTime $easing;
+    }
+    
+    .work-container .work-card .work-img {
+        position: relative;
+        left: 0;
+        width: 105%;
+        height: 200px;
+        box-shadow: 0px 5px 10px 2px rgba(32, 68, 105, 0.3);
+        transition: $transitionTime $easing;
+
+        &::before {
+            display: none;
+            transition: $transitionTime $easing;
+        }
+    }
+    
+    .work-container .work-card .work-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+    
+        a {
+            margin-top: 20px;
+            width: 100%;
+            text-decoration: none;
+            background-color: rgb(39, 73, 109);
+            color: white;
+            border-radius: 50px;  
+            transition: $transitionTime $easing;
+        }
+    }
+
+    .work-container .work-card:hover .work-img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        transition: $transitionTime $easing;
+        background-color: #F3F2DD;
+        background-image: attr(data-url);
+        background-position: left;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px 2px rgba(47, 47, 48, 0.2);
+        
+        &::before {
+            display: none;
+            transition: $transitionTime $easing;
+        }
+
+        img {
+            width: 300px;
+            transition: $transitionTime $easing;
+        }
     }
 }
 

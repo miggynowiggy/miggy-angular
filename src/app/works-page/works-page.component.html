@@ -5,55 +5,40 @@
             algin-items-center 
             justify-content-center 
         "
-        data-aos="zoom-in-up"
+        data-aos="zoom-in-down"
         data-aos-duration="2000"
         data-aos-easing="ease-in-out-back"
     >
         <div class="col-lg-12 col-xs-12">
-            <h3 class="text-center">PORTFOLIO</h3>
+            <h3 class="text-center header-text">PORTFOLIO</h3>
         </div>
     </div>
 
-    <div 
-        class="row algin-items-center justify-content-around mt-5 mt-xs-3"
-        data-aos="zoom-in-up"
-        data-aos-duration="2000"
-        data-aos-delay="100"
-        data-aos-easing="ease-in-out-back"
-    >
-        <div class="card col-lg-3 col-xs-11 mt-3 mt-xs-5 pa-3">
-            <img [src]="img1 | async" class="card-img-top" />
-            <div class="card-body px-2">
-                <h5 class="card-title mt-3" style="font-weight: bold;">PLM Login-atory</h5>
-                <p class="card-text">A web application that records attendance and visitors in the school's laboratory. Also integrates an inventory management system.</p>
-            </div>
-        </div>
-
-        <div 
-            class="card col-lg-3 col-xs-11 mt-3 mt-xs-5 pa-3"
-            data-aos="zoom-in-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-            data-aos-easing="ease-in-out-back"
-        >
-            <img [src]="img2 | async" class="card-img-top" />
-            <div class="card-body px-2">
-                <h5 class="card-title mt-3" style="font-weight: bold;">CEC Lyrics Builder</h5>
-                <p class="card-text">A web application that automatically generates a file containing the lyrics of the desired songs.</p>
-            </div>
-        </div>
-
-        <div 
-            class="card col-lg-3 col-xs-11 mt-3 mt-xs-5 pa-3"
-            data-aos="zoom-in-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-            data-aos-easing="ease-in-out-back"
-        >
-            <img [src]="img3 | async" class="card-img-top" />
-            <div class="card-body px-2">
-                <h5 class="card-title mt-3" style="font-weight: bold;">PapasaKaBa - Probability Calculator</h5>
-                <p class="card-text">An UI mockup for a proposed probability calculator that calculates the chance of the student in passing the board exam.</p>
+    <div class="works">
+        <div class="work-container">
+            <div 
+                class="work-card" 
+                *ngFor="let work of works | async"
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out-back"
+            >
+                <div 
+                    class="work-img" 
+                    [attr.data-url]="work.thumbnail" 
+                    [attr.data-text]="work.title"
+                >
+                    <img [src]="work.thumbnail" />
+                </div>
+                <div class="work-content">
+                    <div>
+                        <h3>{{ work.title }}</h3>
+                        <p>
+                            {{ work.description }}
+                        </p>
+                        <a [routerLink]="['/works', work.id]">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

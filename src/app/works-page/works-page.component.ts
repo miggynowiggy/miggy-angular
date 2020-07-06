@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireStorage } from '@angular/fire/storage';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-works-page',
@@ -8,22 +10,22 @@ import { Observable } from 'rxjs';
   styleUrls: ['./works-page.component.scss']
 })
 export class WorksPageComponent implements OnInit {
-  img1: Observable<string | null>;
-  img2: Observable<string | null>;
-  img3: Observable<string | null>;
+  works: Observable<any[]>;
 
-  constructor(private storage: AngularFireStorage) {
-    const img1 = this.storage.ref('thumbnails/work1.jpg');
-    this.img1 = img1.getDownloadURL();
-
-    const img2 = this.storage.ref('thumbnails/work2.jpg');
-    this.img2 = img2.getDownloadURL();
-
-    const img3 = this.storage.ref('thumbnails/work3.jpg');
-    this.img3 = img3.getDownloadURL();
+  constructor(
+    private storage: AngularFireStorage,
+    firestore: AngularFirestore,
+    private router: Router
+  ) {
+    this.works = firestore.collection('works').valueChanges();
+    // console.log(this.works);
   }
 
   ngOnInit(): void {
+  }
+
+  gotoWork(work: any) {
+    console.log('gotoWork: ', work);
   }
 
 }

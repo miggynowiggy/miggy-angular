@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'AvenirNext LT Pro';
+}
+
+.container-fluid {
+    background: #27496D;
+    height: 60px;
+    width: 100vw;
+}
+
+.nav-logo h4 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 20px;
+    letter-spacing: 5px;
+    color: whitesmoke;
+}
+
+.nav-links li {
+    width: 18%;
+    margin: 3%;
+    text-align: center;
+    color: whitesmoke;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:active {
+            background-color: #4078b4;
+            color: white;
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
