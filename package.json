@@ -17,6 +17,7 @@
     "@angular/core": "~9.1.9",
     "@angular/fire": "^6.0.2",
     "@angular/forms": "~9.1.9",
+    "@angular/localize": "~9.1.9",
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
@@ -26,14 +27,16 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@ng-bootstrap/ng-bootstrap": "^6.1.0",
+    "@types/jquery": "^3.5.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.0",
+    "firebase": "^7.13.1",
     "particles.js": "^2.0.0",
     "rxjs": "~6.5.4",
     "t-writer.js": "^1.0.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "firebase": "^7.13.1"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.7",
