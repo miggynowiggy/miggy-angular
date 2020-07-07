@@ -1,0 +1,26 @@
+<div class="skills-page">
+    <h1 class="text-center pt-5">SKILLS</h1> 
+
+    <div 
+        class="icons-container" 
+        data-aos="slideRight" 
+        data-aos-easing="ease-in-out-back" 
+        data-aos-delay="100"
+        data-aos-duration="3000"
+    >
+        <div 
+            href="#"
+            *ngFor="let skill of skills"
+        >   
+            <i class="icon" [class]="skill.iconName"></i>
+
+            <span class="skillDetails">
+                {{ skill.name }}
+            </span>
+
+            <span class="skillProficiency">
+                {{ skill.proficiency }}
+            </span>
+        </div>
+    </div>
+</div>
