@@ -1,26 +1,35 @@
-<div class="about-page">
-    <h1 class="text-center pt-5">SKILLS</h1> 
-
-    <div 
-        class="icons-container" 
-        data-aos="slideRight" 
-        data-aos-easing="ease-in-out-back" 
-        data-aos-delay="100"
-        data-aos-duration="3000"
-    >
-        <div 
-            href="#"
-            *ngFor="let skill of skills"
-        >   
-            <i class="icon" [class]="skill.iconName"></i>
-
-            <span class="skillDetails">
-                {{ skill.name }}
-            </span>
-
-            <span class="skillProficiency">
-                {{ skill.proficiency }}
-            </span>
+<div class="container-fluid wrapper">
+    <div class="row">
+        <div class="section bg col-lg-12 col-xs-12">
+            <div 
+                class="text-container" 
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out-back"
+            >
+                <h2>
+                    Please, call me <span style="text-decoration: underline;">Miggy</span>
+                    <span 
+                    data-aos="kawayKaway" 
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out-back">
+                    <span class="iconify ml-3" data-icon="emojione-waving-hand" data-inline="true"></span>
+                    </span>
+                    
+                </h2>
+                <p>
+                    Currently a <strong>Computer Science student</strong> at 
+                    <strong>Pamantasan ng Lungsod ng Maynila</strong>.
+                </p>
+                <p>
+                    I have always been passionate about building things and reverse-engineering stuffs that I think are facinating. 
+                    Because I would always want to know how things works.
+                </p>
+                <p>
+                    That is why I do think that taking up Computer Science would help me practice my passion, and to some extent, 
+                    to help people and contribute to the improvement of the society through making efficient and effective technologies.
+                </p>
+            </div>
         </div>
     </div>
 </div>
