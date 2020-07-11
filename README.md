@@ -1,6 +1,6 @@
-# MiggyAngular
+# Miggy-Dev-Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+My Dev Portfolio site for the DICT Web Development Workshop. Created using Angular 9
 
 ## Development server
 
