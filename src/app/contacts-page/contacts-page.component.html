@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="cornered-bg">
+        <div class="header-container">
+            <h1>Let's Connect?</h1>
+        </div>
+        <div class="icons-container">
+            <span 
+                class="icon-box" 
+                *ngFor="let link of links"
+            >
+                <a [href]="link.url" target="_blank" class="logo">
+                    <i [class]="link.icon"></i>
+                </a>
+            </span>
+        </div>
+        <div class="resume-peek">
+            <a [href]="resumeURL | async" target="_blank">
+                Peek into my Resume
+                <span class="iconify" data-icon="emojione:eyes" data-inline="false"></span>
+            </a>
+        </div>
+    </div>
+</div>
