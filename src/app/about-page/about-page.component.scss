@@ -76,17 +76,10 @@
 
     .wrapper {
         height: 980px;
-        width: 100vw;
-        background: linear-gradient(to right, rgba(50, 165, 241, 0.308), rgba(206, 206, 206, 0.384)),
     }
 
     .bg {
-        background-image: 
-            linear-gradient(to right, rgba(50, 165, 241, 0.308), rgba(206, 206, 206, 0.384)),
-            url('https://firebasestorage.googleapis.com/v0/b/miggy-portfolio.appspot.com/o/thumbnails%2Fstanding_miggy.jpg?alt=media&token=18bcae84-589c-4a25-ae57-2bc1624b95ef');
-                          
         background-size: 110%;
-        background-repeat: no-repeat;
         background-position: 0% 0%;
     }
 
@@ -107,16 +100,6 @@
         color: white;
     
         border-radius: 20px 20px 20px 20px;
-        // box-shadow: 0px 15px 30px rgba(92, 92, 92, 0.6);
-    
-        h2 {
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-    
-        p {
-            margin-bottom: 15px;
-        }
     }
 }
 
@@ -129,47 +112,147 @@
 
     .wrapper {
         height: 980px;
-        width: 100vw;
-        background: linear-gradient(to right, rgba(50, 165, 241, 0.308), rgba(206, 206, 206, 0.384)),
     }
 
     .bg {
-        background-image: 
-            linear-gradient(to right, rgba(50, 165, 241, 0.308), rgba(206, 206, 206, 0.384)),
-            url('https://firebasestorage.googleapis.com/v0/b/miggy-portfolio.appspot.com/o/thumbnails%2Fstanding_miggy.jpg?alt=media&token=18bcae84-589c-4a25-ae57-2bc1624b95ef');
-                          
-        background-size: 100%;
-        background-position: 0;
-        background-repeat: no-repeat;
         background-position: 0% 0%;
     }
 
     .text-container {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
         left: 0;
         top: 55vh;
         height: auto;
         width: 92vw;
         padding: 30px;
         margin: 15px;
-        align-items: center;
-        justify-content: center;
-    
-        background-color: #5885AF;
-        color: white;
     
         border-radius: 20px 20px 20px 20px;
-        // box-shadow: 0px 15px 30px rgba(92, 92, 92, 0.6);
+    }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .wrapper {
+        height: 950px;
+    }
+
+    .text-container {
+        left: 0;
+        top: 41vh;
+        height: auto;
+        width: 90vw;
+        padding: 30px;
+        margin: 20px;
+    }
+}
+
+/* ----------- Moto G4 ----------- */
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .wrapper {
+        height: 970px;
+    }
+
+    .bg {                 
+        background-size: 110%;
+        background-position: 0% 0%;
+    }
+
+    .text-container {
+        left: 0;
+        top: 55vh;
+        height: auto;
+        width: 92vw;
+        padding: 30px;
+        margin: 15px;
+    }
+}
+
+/* ----------- Google Pixel 2 ----------- */
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 731px)
+  and (-webkit-min-device-pixel-ratio: 2.6) {
     
-        h2 {
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+    .wrapper {
+        height: 970px;
+    }
+
+    .bg {                 
+        background-size: 110%;
+        background-position: 0% 0%;
+    }
+
+    .text-container {
+        left: 0;
+        top: 55vh;
+        height: auto;
+        width: 92vw;
+        padding: 30px;
+        margin: 15px;
+    }
+}
+
+/* ----------- Google Pixel 2 XL ----------- */
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 823px)
+  and (-webkit-min-device-pixel-ratio: 3.5) {
     
-        p {
-            margin-bottom: 15px;
-        }
+    .wrapper {
+        height: 970px;
+    }
+
+    .bg {                 
+        background-size: 110%;
+        background-position: 0% 0%;
+    }
+
+    .text-container {
+        left: 0;
+        top: 49vh;
+        height: auto;
+        width: 92vw;
+        padding: 30px;
+        margin: 15px;
+    }
+}
+
+/* Portrait and Landscape */
+// iphone 6+, 6s+, 7+, 8+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    .wrapper {
+        height: 980px;
+    }
+
+    .bg {
+        background-size: 110%;
+        background-position: 0% 0%;
+    }
+
+    .text-container {
+        left: 0;
+        top: 54vh;
+        height: auto;
+        width: 92vw;
+        padding: 30px;
+        margin: 15px;
+    
+        border-radius: 20px 20px 20px 20px;
     }
 }
