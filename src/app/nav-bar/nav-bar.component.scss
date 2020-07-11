@@ -38,3 +38,51 @@
         text-decoration: underline;
     }
 }
+
+/* Portrait and Landscape */
+// Iphone 5 / SE
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container-fluid {
+        background: #27496D;
+        height: 90px;
+        width: 100vw;
+    }
+    
+    .nav-logo h4 {
+        font-size: 2em;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-top: 10px;
+        letter-spacing: 5px;
+        color: whitesmoke;
+    }
+
+}
+
+/* Portrait and Landscape */
+// iphone 6, 6s, 7, 8
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container-fluid {
+        background: #27496D;
+        height: 90px;
+        width: 100vw;
+    }
+    
+    .nav-logo h4 {
+        font-size: 2em;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-top: 10px;
+        letter-spacing: 5px;
+        color: whitesmoke;
+    }
+}
+
