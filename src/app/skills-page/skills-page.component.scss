@@ -43,11 +43,11 @@ $firebase: #FF6F00;
 }
 
 .skills-page h1 {
-    font-weight: 600;
+    font-weight: bold;
     font-size: 3.5em;
     line-height: 1em;
     color: #27496d;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .icons-container {
@@ -114,11 +114,6 @@ $firebase: #FF6F00;
     font-size: 0em;
 }
 
-.skillProficiency {
-    opacity: 0;
-    font-size: 0em;
-}
-
 //hovering icons
 .icons-container div:hover:nth-child(1) {
     background: $html;
@@ -134,7 +129,7 @@ $firebase: #FF6F00;
     .icon {
         color: #fff;
         font-size: 4.9em;
-        margin-top: 120px;
+        margin-top: 90px;
     }
 
     .skillDetails {
@@ -145,15 +140,6 @@ $firebase: #FF6F00;
         opacity: 1;
         transition: $transition-time;
         transform: rotate(90deg) skew(0deg) translate(90px, 25px);
-    }
-
-    .skillProficiency {
-        display: inline-block;
-        color: $html;
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(45px, 75px);
     }
 }
 
@@ -171,7 +157,7 @@ $firebase: #FF6F00;
     .icon {
         color: #fff;
         font-size: 4.9em;
-        margin-top: 120px;
+        margin-top: 90px;
     }
 
     .skillDetails {
@@ -181,16 +167,7 @@ $firebase: #FF6F00;
         font-weight: bold;
         opacity: 1;
         transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(90px, 25px);
-    }
-
-    .skillProficiency {
-        display: inline-block;
-        color: darken($css, 8%);
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(65px, 75px);
+        transform: rotate(90deg) skew(0deg) translate(65px, 25px);
     }
 }
 
@@ -206,29 +183,21 @@ $firebase: #FF6F00;
     }
 
     .icon {
-        color: #000;
+        color: #2c2c2c;
         font-size: 4.9em;
-        margin-top: 105px;
+        margin-top: 70px;
     }
 
     .skillDetails {
         display: inline-block;
         color: darken($js, 8%);
-        font-size: 3em;
+        font-size: 2.8em;
         font-weight: bold;
         opacity: 1;
         transition: $transition-time;
         transform: rotate(90deg) skew(0deg) translate(140px, 25px);
     }
 
-    .skillProficiency {
-        display: inline-block;
-        color: darken($js, 10%);
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(45px, 75px);
-    }
 }
 
 .icons-container div:hover:nth-child(4) {
@@ -245,7 +214,7 @@ $firebase: #FF6F00;
     .icon {
         color: #fff;
         font-size: 4.9em;
-        margin-top: 120px;
+        margin-top: 80px;
     }
 
     .skillDetails {
@@ -258,14 +227,6 @@ $firebase: #FF6F00;
         transform: rotate(90deg) skew(0deg) translate(65px, 25px);
     }
 
-    .skillProficiency {
-        display: inline-block;
-        color: darken($vue, 8%);
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(35px, 75px);
-    }
 }
 
 .icons-container div:hover:nth-child(5) {
@@ -282,7 +243,7 @@ $firebase: #FF6F00;
     .icon {
         color: #fff;
         font-size: 4.9em;
-        margin-top: 120px;
+        margin-top: 70px;
     }
 
     .skillDetails {
@@ -292,17 +253,9 @@ $firebase: #FF6F00;
         font-weight: bold;
         opacity: 1;
         transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(90px, 25px);
+        transform: rotate(90deg) skew(0deg) translate(85px, 25px);
     }
 
-    .skillProficiency {
-        display: inline-block;
-        color: darken($react, 8%);
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(65px, 75px);
-    }
 }
 
 .icons-container div:hover:nth-child(6) {
@@ -318,8 +271,8 @@ $firebase: #FF6F00;
 
     .icon {
         color: #fff;
-        font-size: 4.9em;
-        margin-top: 120px;
+        font-size: 4.7em;
+        margin-top: 70px;
     }
 
     .skillDetails {
@@ -329,17 +282,9 @@ $firebase: #FF6F00;
         font-weight: bold;
         opacity: 1;
         transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(120px, 25px);
+        transform: rotate(90deg) skew(0deg) translate(115px, 25px);
     }
 
-    .skillProficiency {
-        display: inline-block;
-        color: darken($node, 8%);
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(95px, 75px);
-    }
 }
 
 .icons-container div:hover:nth-child(7) {
@@ -356,27 +301,19 @@ $firebase: #FF6F00;
     .icon {
         color: #fff;
         font-size: 4.9em;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .skillDetails {
         display: inline-block;
         color: darken($firebase, 2%);
-        font-size: 3em;
+        font-size: 2.8em;
         font-weight: bold;
         opacity: 1;
         transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(120px, 25px);
+        transform: rotate(90deg) skew(0deg) translate(110px, 25px);
     }
 
-    .skillProficiency {
-        display: inline-block;
-        color: darken($firebase, 8%);
-        font-size: 1.5em;
-        opacity: 1;
-        transition: $transition-time;
-        transform: rotate(90deg) skew(0deg) translate(105px, 75px);
-    }
 }
 
 /* Portrait and Landscape */
@@ -390,7 +327,7 @@ $firebase: #FF6F00;
         background-color: #dae1e7;
         position: relative;
         width: 100vw;
-        height: 270vh;
+        height: 1850px;
     }    
 
     .icons-container div {
@@ -407,6 +344,11 @@ $firebase: #FF6F00;
         transition: $transition-time;
         transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
         box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+
+        &:hover {
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+            box-shadow: -50px 20px 50px rgba(0, 0, 0, .5);
+        }
     }
 
     .icons-container {
@@ -431,8 +373,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -445,14 +387,6 @@ $firebase: #FF6F00;
             transform: rotate(90deg) skew(0deg) translate(75px, 5px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: $html;
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(30px, 50px);
-        }
     }
 
     .icons-container div:nth-child(2) {
@@ -468,8 +402,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -480,15 +414,6 @@ $firebase: #FF6F00;
             opacity: 1;
             transition: $transition-time;
             transform: rotate(90deg) skew(0deg) translate(60px, 5px);
-        }
-    
-        .skillProficiency {
-            display: inline-block;
-            color: darken($css, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(35px, 55px);
         }
     }
     
@@ -505,28 +430,20 @@ $firebase: #FF6F00;
     
         .icon {
             color: #000;
-            font-size: 4.9em;
-            margin-top: 90px;
+            font-size: 4.5em;
+            margin-top: 50px;
         }
     
         .skillDetails {
             display: inline-block;
             color: darken($js, 8%);
-            font-size: 2.25em;
+            font-size: 1.9em;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(115px, 5px);
+            transform: rotate(90deg) skew(0deg) translate(105px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($js, 10%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(25px, 55px);
-        }
     }
     
     .icons-container div:nth-child(4) {
@@ -542,8 +459,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.8em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -553,16 +470,7 @@ $firebase: #FF6F00;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(55px, 5px);
-        }
-    
-        .skillProficiency {
-            display: inline-block;
-            color: darken($vue, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(25px, 50px);
+            transform: rotate(90deg) skew(0deg) translate(65px, 15px);
         }
     }
     
@@ -579,8 +487,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 98px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -590,17 +498,9 @@ $firebase: #FF6F00;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(75px, 5px);
+            transform: rotate(90deg) skew(0deg) translate(75px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($react, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(65px, 50px);
-        }
     }
     
     .icons-container div:nth-child(6) {
@@ -616,28 +516,20 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
             display: inline-block;
             color: darken($node, 10%);
-            font-size: 2.5em;
+            font-size: 2.4em;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(95px, 5px);
+            transform: rotate(90deg) skew(0deg) translate(90px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($node, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(25px, 45px);
-        }
     }
     
     .icons-container div:nth-child(7) {
@@ -653,28 +545,20 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
             display: inline-block;
             color: darken($firebase, 2%);
-            font-size: 2.5em;
+            font-size: 2.4em;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(100px, 15px);
+            transform: rotate(90deg) skew(0deg) translate(95px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($firebase, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(10px, 65px);
-        }
     }
    
 }
@@ -689,7 +573,7 @@ $firebase: #FF6F00;
     .skills-page {
         background-color: #dae1e7;
         width: 100vw;
-        height: 295vh;
+        height: 1850px;
     }    
 
     .icons-container div {
@@ -706,6 +590,11 @@ $firebase: #FF6F00;
         transition: $transition-time;
         transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
         box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+
+        &:hover {
+            transform: perspective(900px) rotate(-30deg) skew(25deg) translate(0, 0);
+            box-shadow: -50px 20px 50px rgba(0, 0, 0, .5);
+        }
     }
 
     .icons-container {
@@ -715,6 +604,7 @@ $firebase: #FF6F00;
         align-items: flex-start;
         justify-content: center;
         padding: 2px 2px 2px 2px;
+        margin-left: 7vw;
     }
 
     .icons-container div:nth-child(1) {
@@ -730,8 +620,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -744,14 +634,6 @@ $firebase: #FF6F00;
             transform: rotate(90deg) skew(0deg) translate(75px, 5px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: $html;
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(30px, 50px);
-        }
     }
 
     .icons-container div:nth-child(2) {
@@ -767,8 +649,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -779,15 +661,6 @@ $firebase: #FF6F00;
             opacity: 1;
             transition: $transition-time;
             transform: rotate(90deg) skew(0deg) translate(60px, 5px);
-        }
-    
-        .skillProficiency {
-            display: inline-block;
-            color: darken($css, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(35px, 55px);
         }
     }
     
@@ -804,28 +677,20 @@ $firebase: #FF6F00;
     
         .icon {
             color: #000;
-            font-size: 4.9em;
-            margin-top: 90px;
+            font-size: 4.5em;
+            margin-top: 50px;
         }
     
         .skillDetails {
             display: inline-block;
             color: darken($js, 8%);
-            font-size: 2.25em;
+            font-size: 1.9em;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(115px, 5px);
+            transform: rotate(90deg) skew(0deg) translate(105px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($js, 10%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(25px, 55px);
-        }
     }
     
     .icons-container div:nth-child(4) {
@@ -841,8 +706,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.8em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -852,16 +717,7 @@ $firebase: #FF6F00;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(55px, 5px);
-        }
-    
-        .skillProficiency {
-            display: inline-block;
-            color: darken($vue, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(25px, 50px);
+            transform: rotate(90deg) skew(0deg) translate(65px, 15px);
         }
     }
     
@@ -878,8 +734,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 98px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -889,17 +745,9 @@ $firebase: #FF6F00;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(75px, 5px);
+            transform: rotate(90deg) skew(0deg) translate(75px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($react, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(65px, 50px);
-        }
     }
     
     .icons-container div:nth-child(6) {
@@ -915,8 +763,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -926,17 +774,9 @@ $firebase: #FF6F00;
             font-weight: bold;
             opacity: 1;
             transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(95px, 5px);
+            transform: rotate(90deg) skew(0deg) translate(95px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($node, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(25px, 45px);
-        }
     }
     
     .icons-container div:nth-child(7) {
@@ -952,8 +792,8 @@ $firebase: #FF6F00;
     
         .icon {
             color: #fff;
-            font-size: 4.9em;
-            margin-top: 100px;
+            font-size: 4.5em;
+            margin-top: 60px;
         }
     
         .skillDetails {
@@ -966,13 +806,75 @@ $firebase: #FF6F00;
             transform: rotate(90deg) skew(0deg) translate(100px, 15px);
         }
     
-        .skillProficiency {
-            display: inline-block;
-            color: darken($firebase, 8%);
-            font-size: 1.5em;
-            opacity: 1;
-            transition: $transition-time;
-            transform: rotate(90deg) skew(0deg) translate(10px, 65px);
-        }
     }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .skills-page {
+        background-color: #e5eaee;
+        width: 100vw;
+        height: 1350px;
+    }
+
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .skills-page {
+        background-color: #e5eaee;
+        width: 100vw;
+        height: 1350px;
+    }
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1360px) 
+  and (max-device-width: 1400px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .skills-page {
+        background-color: #e5eaee;
+        width: 100vw;
+        height: 1280px;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 1920px) 
+  and (max-device-width: 2800px) {
+
+    .skills-page {
+        background-color: #e5eaee;
+        width: 100vw;
+        height: 900px;
+    }
+
+    .icons-container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10vw 0 10vw;
+        top: 10vh;
+    }
+
 }

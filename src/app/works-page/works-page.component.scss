@@ -146,7 +146,6 @@ $easing: ease-in-out;
 
 /* Portrait and Landscape */
 // Iphone 5 / SE
-
 @media only screen
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -154,16 +153,21 @@ $easing: ease-in-out;
 
     .works { 
         padding: 0;
-        margin-top: 20px;
+        margin-top: 5px;
+    }
+
+    .main .row .col-xs-10 .header-text {
+        padding: 20px;
+        font-size: -3em;
     }
 
     .work-container {
         position: relative;
-        width: 100vw;
+        width: 90vw;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        justify-items: flex-start;
     }
     
     .work-container .work-card {
@@ -174,9 +178,8 @@ $easing: ease-in-out;
         align-items: center;
         max-width: 300px;
         min-height: 480px;
-        margin-top: 30px;
         border-radius: 20px;
-        margin: 40px 0 0 0;
+        margin: 30px 0 0 0;
     }
 
     .work-container .work-card:hover .work-img {
@@ -353,6 +356,32 @@ $easing: ease-in-out;
             transition: $transitionTime $easing;
         }
     }
+}
+
+@media only screen 
+  and (min-device-width: 1360px) 
+  and (max-device-width: 1920px) {
+
+    .work-container {
+        position: relative;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .work-container .work-card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+
 }
 
 
