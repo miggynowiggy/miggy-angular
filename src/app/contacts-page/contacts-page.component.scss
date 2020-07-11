@@ -68,6 +68,7 @@
 
 .resume-peek {
     margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 1em;
     color: whitesmoke;
     text-decoration: none;
@@ -77,5 +78,39 @@
     a {
         text-decoration: none;
     }
+}
+
+/* Portrait and Landscape */
+// Iphone 5 / SE
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .main {
+        height: 700px;
+        width: 100vw;
+    }
+
+    .cornered-bg {
+        height: 800px;
+        width: 100vw;
+    }
+    
+    .icons-container {
+        height: auto;
+        width: auto;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .icon-box {
+        width: auto;
+    }
+
+    .header-container {
+        height: auto;
+    }
+
 }
 
